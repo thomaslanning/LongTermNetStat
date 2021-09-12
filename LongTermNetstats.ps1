@@ -83,6 +83,7 @@ while ($true){
     $jitterStats = $jitterArray | Measure-Object -Average -Maximum -Minimum
 
     $results = [psCustomObject][Ordered] @{
+        Time = Get-Date
         Count = $pingArray.count
         Packet_Loss = (($errors/$testArray.Count) / ($count)) * 100
         Ping_Average = $stats.Average
