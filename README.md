@@ -1,2 +1,2 @@
 # LongTermNetStat
-This script was to collect long term data and export it into a CSV.
+This script is used to test the internet connection of a home network by pinging multiple DNS servers and recording the response times in a log file. The script pings the servers at a specified interval and records the average, minimum, and maximum response times over a specified amount of time. It also calculates the average, minimum, and maximum jitter, which is the difference in consecutive response times. The results are saved to a CSV file with a timestamp in a "logs" directory. The script will create the directory if it doesn't exist, and will create a new log file for each interval of time specified.
